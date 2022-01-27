@@ -1,0 +1,98 @@
+
+
+.main {
+    text-align: center;
+    margin: 125px 70px;
+}
+.tittle {}
+.tittle h1 {
+    font-family: serif;
+    font-size: 4rem;
+}
+.tittle .topimg {
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.consept {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.circle{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: rgb(214, 214, 214);
+  text-align:center;
+  line-height: 80px;
+  margin-bottom: 30px;
+}
+
+
+.consept .direction {
+    margin: 0 50px;
+}
+
+.consept .direction p {
+    font-size: 0.8rem;
+}
+
+span {
+    font-size: 1.5rem;
+    font-family: inherit;
+}
+
+.consept .desing {
+    margin: 0 50px;
+}
+
+.consept .desing p {
+    font-size: 0.8rem;
+}
+
+.consept .coding {
+    margin: 0 50px;
+}
+
+.coding p {}
+
+.about {
+    margin-top: 200px;
+}
+.main h2 {
+    font-size: 4rem;
+    margin-bottom: 80px;
+}
+
+.about .profile {}
+.about .profile .pro {
+    position: relative;
+    text-align: left;
+    margin-left: 30%;
+}
+
+.about .profile .pro::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 222px;
+    background-color: #0c0c0c;
+    position: absolute;
+    top: -2px;
+    left: -3%;
+}
+.syousai {
+    text-align: left;
+    margin-left: 30%;
+    margin-top: 75px;
+
+}
+
+.work {
+    margin-top: 200px;
+}
+
