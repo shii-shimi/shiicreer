@@ -322,6 +322,41 @@ a.btn--circle {
     right: 62%;
 }
 
+.tmove {
+    margin: 135px;
+}
+
+.tmove .move {
+
+}
+
+footer { 
+    width: 75%;   
+    justify-content: center;   
+    margin: 0 auto;    
+    margin-bottom: 50px;
+    padding: 0 20px;
+    }
+    
+.foot {
+    justify-content: center;
+    border-bottom: solid rgba(133, 131, 131, 0.89);
+    display: flex;
+    }
+        
+.foot .fimg {
+    width: 15%;
+    object-fit: cover;
+    height: 70%;
+}
+    
+.foot .company {    
+    line-height: 17rem;
+    font-family: 游明朝;
+}
+    
+
+
 /* --------------------------------------------------
     /* モバイル向けスタイル */
 
@@ -402,5 +437,19 @@ a.btn--circle {
     .contact .insta {
         width: 21%;
     }
+
+    .tmove {
+        margin-top: 100px;
+        margin-bottom: 26px;
+    }
+
+    .foot {  
+        border-bottom: solid rgba(133, 131, 131, 0.89);
+        text-align: center;
+    }
+
+    .foot .fimg {
+        display: none;
+    } 
 
 }
