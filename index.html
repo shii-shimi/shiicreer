@@ -10,10 +10,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <!--js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
     <title>shiicreer</title>
 </head>
 <body>
+
+        <script src="script.js"></script>
+
+        <!---------ハンバーガーメニュー---------->
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          
+          <nav class="globalMenuSp">
+              <ul>
+                  <li><a href="#1">about</a></li>
+                  <li><a href="#2">work</a></li>
+                  <li><a href="#3">contact</a></li>
+              </ul>
+          </nav>
+
+
+
 
     <div class="main">
         <div class="tittle">
@@ -31,9 +53,10 @@
                 <span>ディレクション</span>
                 <br>
                 <br>
-                <p>ヒアリングを行い<br>
-                    デザインに入る前の<br>
-                    事前準備を行います<br>
+                <p>お客様の要望をヒアリングし<br>
+                    デザインに入る前の事前準備を行います<br>
+                    何が必要で何が必要でないのかを判断し<br>
+                    デザインを作るための土台を作ります
                     </p>
             </div>
 
@@ -47,11 +70,12 @@
                 <br>
                 <br>
                 <p>ご希望に合わせて<br>
-                    webデザイン<br>
-                    バナーデザイン<br>
-                    ロゴデザイン<br>
-                    名刺デザイン<br>
-                    線画によるイラスト
+                   ・   webデザイン<br>
+                   ・  バナーデザイン<br>
+                   ・  ロゴデザイン<br>
+                   ・  名刺デザイン<br>
+                   ・  線画によるイラスト<br>
+                   を作成していきます。
                 </p>
             </div>
 
@@ -65,16 +89,21 @@
                 <br>
                 <br>
                 <p>
-                    ご希望に合わせて<br>
-                    サイトを作成します<br>
+                    デザインを元に<br>
+                    動きのあるサイトを作成します<br>
                     PC  モバイル対応
                 </p>
             </div>
 
         </div>
+        
 
+        
+        
         <div class="about">
-            <h2>about</h2>
+            <span class="circle3"></span>
+
+            <h2 id="1">about</h2>
             <div class="profile">
                 <p class="pro">
                     name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  shiicreer<br><br>
@@ -97,26 +126,33 @@
 
 
         <div class="work">
-            <h2>work</h2>
+            <h2 id="2">work</h2>
 
-            <div class="act">
-                <img src="img/yaki.jpg" alt="焼き鳥やげん" class="yaki">
-                <img src="img/ortensia.jpg" alt="オルテンシア" class="orten">
+            <div class="img">
+                <div class="act">
+                    <img src="img/yaki.jpg" alt="焼き鳥やげん" class="yaki">
+                    <img src="img/ortensia.jpg" alt="オルテンシア" class="orten">
+                </div>
+
+                <div class="btnbox">
+                    <a href="" class="btn btn--orange btn--circle btn--circle-a btn--shadow">
+                        more
+                        <img src="img/streamline-icon-interface-edit-pin-3@48x48.png" alt="" class="pin">
+                    </a>
+                </div>
             </div>
 
-            <div class="btnbox">
-                <a href="" class="btn btn--orange btn--circle btn--circle-a btn--shadow">
-                    more
-                    <img src="img/streamline-icon-interface-edit-pin-3@48x48.png" alt="" class="pin">
-                </a>
-            </div>
-            
         </div>
 
         <div class="contact">
-            <h2>contact</h2>
-            <img src="img/icons8-インスタグラム-30.png" alt="インスタ">
-            <p>shiicreer</p>
+            <h2 id="3">contact</h2>
+
+            <span class="circle4"></span>
+
+            <a href="https://www.instagram.com/shiicreer">
+                <img src="img/icons8-インスタグラム-30.png" alt="インスタ" >
+            </a>
+            <p>@shiicreer</p>
         </div>
 
     </div>
