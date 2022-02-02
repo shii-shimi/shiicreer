@@ -1,5 +1,107 @@
 
 
+
+/*　ハンバーガーボタン　*/
+.hamburger {
+    display : block;
+    position: fixed;
+    z-index : 3;
+    right : 13px;
+    top   : 12px;
+    width : 42px;
+    height: 42px;
+    cursor: pointer;
+    text-align: center;
+  }
+  .hamburger span {
+    display : block;
+    position: absolute;
+    width   : 30px;
+    height  : 2px ;
+    left    : 6px;
+    background : #555;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition   : 0.3s ease-in-out;
+    transition        : 0.3s ease-in-out;
+  }
+  .hamburger span:nth-child(1) {
+    top: 10px;
+  }
+  .hamburger span:nth-child(2) {
+    top: 20px;
+  }
+  .hamburger span:nth-child(3) {
+    top: 30px;
+  }
+  
+  /* ナビ開いてる時のボタン */
+  .hamburger.active span{
+    background :#fff;
+  }
+  .hamburger.active span:nth-child(1) {
+    -webkit-transform: translateY(6px);
+    -moz-transform   : translateY(6px);
+    transform        : translateY(6px);
+  }
+  .hamburger.active span:nth-child(2){
+  -webkit-transform: translateY(-4px);
+    -moz-transform   : translateY(-4px);
+    transform        : translateY(-4px);
+  }  
+  
+  .hamburger.active span:nth-child(3) {
+    -webkit-transform: translateY(-14px);
+    -moz-transform   : translateY(-14px);
+    transform        : translateY(-14px);
+  }
+  
+  nav.globalMenuSp {
+    position: fixed;
+    z-index : 2;
+    top  : 0;
+    left : 0;
+    color: #fff;
+    background: rgba(0,0,0,0.7);
+    text-align: center;
+    width: 100%;
+    opacity: 0;
+    transition: opacity .6s ease, visibility .6s ease;
+  }
+  
+  nav.globalMenuSp ul {
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+  }
+  
+  nav.globalMenuSp ul li {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    transition: .4s all;
+  }
+  nav.globalMenuSp ul li:last-child {
+    padding-bottom: 0;
+  }
+  nav.globalMenuSp ul li:hover{
+    background :#ddd;
+  }
+  
+  nav.globalMenuSp ul li a {
+    display: block;
+    color: #fff;
+    padding: 1em 0;
+    text-decoration :none;
+  }
+  
+  /* このクラスを、jQueryで付与・削除する */
+  nav.globalMenuSp.active {
+    opacity: 100;
+  
+  }
+
+
+
 .main {
     text-align: center;
     margin: 125px 70px;
@@ -64,19 +166,36 @@ span {
 
 .about {
     margin-top: 200px;
+    position: relative;
 }
+
+.circle3 {
+   
+    display: inline-block;
+    width: 207px;
+    height: 207px;
+    border-radius: 50%;
+    background: rgba(214, 214, 214, 0.2);
+    text-align: left;
+    line-height: 110px;
+    margin-bottom: 35px;
+    position: absolute;
+    top: -106px;
+    right: 54%;
+}
+
+
 .main h2 {
     font-size: 4rem;
     margin-bottom: 80px;
     color: #bdc237;
 }
 
-.about .profile {}
 .about .profile .pro {
     position: relative;
     text-align: left;
     margin-left: 30%;
-    font-family: æ¸¸æ˜Žæœ;
+    font-family: 游明朝;
     font-size: 1.3rem;
 }
 
@@ -91,6 +210,18 @@ span {
     left: -3%;
 }
 
+
+/*****about アニメーション*****************************************************
+
+script.jsにて記入
+
+***/
+
+
+
+
+
+
 .syo {
     position: relative;
 
@@ -99,7 +230,7 @@ span {
 .syo .syousai {
     text-align: center;
     margin-top: 75px;
-    font-family: æ¸¸æ˜Žæœ;
+    font-family: 游明朝;
 }
 
 
@@ -152,23 +283,120 @@ span {
 a.btn--orange {
     color: black;
     background-color: rgba(214, 214, 214, 0.35);
-  }
+}
   
-  a.btn--orange:hover {
+a.btn--orange:hover {
     color: black;
     background: rgba(214, 214, 214, 0.35);
-  }
+}
   
  
   
-  a.btn--circle {
+a.btn--circle {
     border-radius: 50%;
     line-height: 100px;
     width: 100px;
     height: 100px;
     padding: 0;
-  }
+}
 
-  .pin {
+.pin {
     width: 20%;
-  }
+}
+
+.contact{
+    position: relative;
+}
+
+.circle4 {
+    display: inline-block;
+    width: 207px;
+    height: 207px;
+    border-radius: 50%;
+    background: rgba(214, 214, 214, 0.2);
+    text-align: left;
+    line-height: 110px;
+    margin-bottom: 35px;
+    position: absolute;
+    top: 63px;
+    right: 62%;
+}
+
+/* --------------------------------------------------
+    /* モバイル向けスタイル */
+
+@media screen and (max-width: 540px) {
+
+    .main {
+        text-align: center;
+        margin: 125px 15px;
+    }
+
+    .tittle .topimg {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .consept {
+        justify-content: center;
+        margin-top: 70px;
+        display: block;
+    }
+
+    .consept .direction {
+        margin: 0 45px;
+        margin-bottom: 60px;
+        border-bottom: solid rgb(121, 121, 121);
+    }
+
+    .consept .desing {
+        margin: 0 45px;
+        margin-bottom: 60px;
+        border-bottom: solid rgb(121, 121, 121);
+    }
+
+    .consept .coding {
+        margin: 0 45px;
+        margin-bottom: 60px;
+        border-bottom: solid rgb(121, 121, 121);
+    }
+
+    .syo .circle2 {
+        display: inline-block;
+        width: 207px;
+        height: 207px;
+        border-radius: 50%;
+        background: rgba(214, 214, 214, 0.35);
+        text-align: left;
+        line-height: 110px;
+        margin-bottom: 35px;
+        position: absolute;
+        top: 35px;
+        right: 0%;
+    }
+
+    .about .profile .pro {
+        position: relative;
+        text-align: left;
+        margin-left: 20%;
+        font-family: 游明朝;
+        font-size: 1rem;
+    }
+
+    .about .profile .pro::before {
+        content: "";
+        display: inline-block;
+        width: 3px;
+        height: 140px;
+        background-color: #0c0c0c;
+        position: absolute;
+        top: -13%;
+        left: -10%;
+    }
+
+    .syo .syousai {
+        font-size: 0.8rem;
+    }
+
+}
