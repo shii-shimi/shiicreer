@@ -63,6 +63,10 @@ $(function () {
         } else {
             $('.globalMenuSp').removeClass('active');
         }
+        $('.menuclose').on('click', function(event) {
+          $('.hamburger').removeClass('active');
+          $('.globalMenuSp').removeClass('active');
+        });
     });
 });
 
