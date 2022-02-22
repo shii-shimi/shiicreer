@@ -106,7 +106,7 @@ main {
     margin: 125px 70px;
 }
 
-.gallery{
+ul{
     list-style: none;
     display: flex;
     width: 100%;
@@ -114,7 +114,59 @@ main {
     margin: 0 auto;
 }
 
-.gallery img {
+ul img {
+    width: 55%;
+}
+
+.btnbox {
+    margin-top: 90px;
+    margin-bottom: 150px;
+}
+
+/*主な共通部分は省略*/
+
+a.btn--orange {
+    color: black;
+    background-color: rgba(214, 214, 214, 0.35);
+}
+  
+a.btn--orange:hover {
+    color: black;
+    background: rgba(214, 214, 214, 0.35);
+}
+  
+ 
+  
+a.btn--circle {
+    border-radius: 50%;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    padding: 0;
+}
+
+.btnbox .pin{
+    width: 35%;
+}
+
+/***********************モーダル*********************************************/
+
+
+
+main {
+    text-align: center;
+    margin: 125px 70px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+ul li img {
     width: 55%;
 }
 
@@ -148,16 +200,50 @@ a.btn--circle {
 
 /***********************モーダル*********************************************/
 
-.modaal-close:after,
-.modaal-close:before{
-    background: #ccc;
-}
 
-.modaal-close:focus:after,
-.modaal-close:focus:before,
-.modaal-close:hover:after,
-.modaal-close:hover:before{
-    background: #666;
-}
+ul li a:hover {
+    opacity: 0.8;
+  }
 
+ul li a img {
+    width: 200px;
+  }
+
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+  }
+
+
+  .bigimg img {
+    position: absolute;
+    width: 100%;
+    max-width: 400px;
+    top: 10px;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+
+.close-btn {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
+
+.close-btn a {
+    color: #fff;
+    text-decoration: none;
+  }
 /*******************************************************************************/
