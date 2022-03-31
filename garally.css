@@ -5,7 +5,9 @@
 ===================================*/
 .gallery{
 columns: 3;/*段組みの数*/
-padding:0 15px;/*ギャラリー左右に余白をつける*/
+padding:0 100px;/*ギャラリー左右に余白をつける*/
+text-align: center;
+margin: 0px 50px;
 }
 
 .gallery li {
